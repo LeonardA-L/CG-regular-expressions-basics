@@ -14,6 +14,8 @@ Here is an example Regex that matches email addresses:
 \b[\w.%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b
 ```
 
+Everything that is before the `@` is the username, and everything after the `\.` is the domain extension.
+
 @[Test this regex against examples]({"command": "RegexCourse.Validator.VerifyExample1"})
 
 If you click on the **`View Validators`** button, you'll see what has been matched in each validator, shown by a colored highlight.
@@ -23,7 +25,7 @@ As you can see, a regex pattern is a very powerful tool. It's used in a lot of d
 
 In this course you'll learn the basics of regex: enough to understand a regex pattern and to create your own patterns.
 
-### Always use literal strings!
+### On C# literal strings
 I will use C# as the reference language for the course. Please note that string definition varies in other languages. It's important that you take into account how your language treats some characters inside strings. For example, C# doesn't take the `\` character as literal in normal strings. This is problematic for regex, because then you'll need to escape `\`.
 
 For this reason I use string literals in C# (see https://msdn.microsoft.com/en-us/library/aa691090(v=vs.71).aspx ). C# string literals are defined with a `@` before the quote:

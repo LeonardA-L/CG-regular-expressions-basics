@@ -10,7 +10,7 @@ The example below provides some code with an email regex pattern. To test it, pr
 
 Here is an example Regex that matches email addresses:
 
-```math
+```regex
 \b[\w.%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b
 ```
 
